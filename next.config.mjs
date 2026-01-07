@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/viratsbuildtech',
+  assetPrefix: '/viratsbuildtech',
   typescript: {
     ignoreBuildErrors: true,
   },

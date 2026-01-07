@@ -46,6 +46,11 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Fix image paths
+        run: |
+          find out -type f -name "*.html" -exec sed -i 's|src="/|src="/viratsbuildtech/|g' {} +
+          find out -type f -name "*.html" -exec sed -i 's|href="/|href="/viratsbuildtech/|g' {} +
+
       - name: Add .nojekyll file
         run: touch out/.nojekyll
 

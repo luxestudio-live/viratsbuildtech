@@ -46,10 +46,12 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Fix image paths (keep CSS/JS paths intact)
+      - name: Fix image paths in HTML and JS files
         run: |
-          find out -type f -name "*.html" -exec sed -i 's|src="/\([^v]\)|src="/viratsbuildtech/\1|g' {} +
-          find out -type f -name "*.html" -exec sed -i 's|srcset="/\([^v]\)|srcset="/viratsbuildtech/\1|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|src:"/\([^v_]\)|src:"/viratsbuildtech/\1|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|src="/\([^v_]\)|src="/viratsbuildtech/\1|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|srcset="/\([^v_]\)|srcset="/viratsbuildtech/\1|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|"src","/\([^v_]\)|"src","/viratsbuildtech/\1|g' {} +
 
       - name: Add .nojekyll file
         run: touch out/.nojekyll

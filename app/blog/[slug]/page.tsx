@@ -5,6 +5,20 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react"
 import Link from "next/link"
 
+export function generateStaticParams() {
+  return [
+    { slug: 'sustainable-architecture-2025' },
+    { slug: 'minimalist-design-principles' },
+    { slug: 'smart-home-technology' },
+    { slug: 'biophilic-design-trends' },
+    { slug: 'adaptive-reuse-projects' },
+    { slug: 'color-psychology-interiors' },
+    { slug: 'commercial-space-planning' },
+    { slug: 'sustainable-building-materials' },
+    { slug: 'riverside-residence-case-study' },
+  ]
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <div className="min-h-screen">

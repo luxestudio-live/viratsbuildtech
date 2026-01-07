@@ -7,6 +7,12 @@ import { MapPin, Calendar, Users, CheckCircle2, ArrowLeft, ArrowRight, Star } fr
 import Link from "next/link"
 import { ImageComparison } from "@/components/image-comparison"
 
+export function generateStaticParams() {
+  return [
+    { id: '1' },
+  ]
+}
+
 // Mock project data
 const projectData = {
   1: {

@@ -46,12 +46,17 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Fix image paths in HTML and JS files
+      - name: Fix all image and asset paths in output
         run: |
-          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|src:"/\([^v_]\)|src:"/viratsbuildtech/\1|g' {} +
-          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|src="/\([^v_]\)|src="/viratsbuildtech/\1|g' {} +
-          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|srcset="/\([^v_]\)|srcset="/viratsbuildtech/\1|g' {} +
-          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's|"src","/\([^v_]\)|"src","/viratsbuildtech/\1|g' {} +
+          # Fix image src attributes in all files
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i 's|"\(/[^v"]*\.jpg\)"|"/viratsbuildtech\1"|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i 's|"\(/[^v"]*\.png\)"|"/viratsbuildtech\1"|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i 's|"\(/[^v"]*\.svg\)"|"/viratsbuildtech\1"|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i 's|"\(/[^v"]*\.webp\)"|"/viratsbuildtech\1"|g' {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i "s|'\\(/[^v']*\\.jpg\\)'|'/viratsbuildtech\\1'|g" {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i "s|'\\(/[^v']*\\.png\\)'|'/viratsbuildtech\\1'|g" {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i "s|'\\(/[^v']*\\.svg\\)'|'/viratsbuildtech\\1'|g" {} +
+          find out -type f \( -name "*.html" -o -name "*.js" -o -name "*.json" \) -exec sed -i "s|'\\(/[^v']*\\.webp\\)'|'/viratsbuildtech\\1'|g" {} +
 
       - name: Add .nojekyll file
         run: touch out/.nojekyll

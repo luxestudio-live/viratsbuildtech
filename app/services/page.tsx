@@ -326,6 +326,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* First row - 4 steps */}
               {[
                 {
                   number: "01",
@@ -347,6 +348,17 @@ export default function ServicesPage() {
                   title: "Design Development",
                   description: "Refine concepts with detailed drawings, 3D visualizations, and specifications",
                 },
+              ].map((step) => (
+                <Card key={step.number} className="p-6 relative">
+                  <div className="text-5xl font-serif text-secondary/20 mb-3">{step.number}</div>
+                  <h4 className="text-lg font-serif mb-2">{step.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                </Card>
+              ))}
+              
+              {/* Second row - 3 steps centered */}
+              <div className="lg:col-start-2"></div>
+              {[
                 {
                   number: "05",
                   title: "Material Selection",
@@ -362,12 +374,8 @@ export default function ServicesPage() {
                   title: "Project Completion",
                   description: "Final walkthrough, punch lists, and delivery of care instructions",
                 },
-              ].map((step, index) => (
-                <Card key={step.number} className={`p-6 relative ${
-                  index >= 4 ? 'md:col-span-2 lg:col-span-1' : ''
-                } ${
-                  index === 6 ? 'lg:col-start-2' : ''
-                }`}>
+              ].map((step) => (
+                <Card key={step.number} className="p-6 relative">
                   <div className="text-5xl font-serif text-secondary/20 mb-3">{step.number}</div>
                   <h4 className="text-lg font-serif mb-2">{step.title}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>

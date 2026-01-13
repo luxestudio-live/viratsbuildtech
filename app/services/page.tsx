@@ -136,6 +136,67 @@ export default function ServicesPage() {
               </Link>
             </Card>
           </div>
+
+          {/* Civil Architecture Process */}
+          <div className="mt-20 pt-20 border-t">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-serif mb-4">Our Architecture Process</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                A systematic 8-step approach to bringing your architectural vision to life
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {
+                  number: "01",
+                  title: "Consultation",
+                  description: "Discuss project requirements, budget, and timeline with comprehensive site evaluation",
+                },
+                {
+                  number: "02",
+                  title: "Site Analysis",
+                  description: "Study topography, climate, environmental factors, and local building regulations",
+                },
+                {
+                  number: "03",
+                  title: "Design Development",
+                  description: "Create conceptual designs with floor plans, elevations, and cross-sections",
+                },
+                {
+                  number: "04",
+                  title: "Schematic Design",
+                  description: "Refine designs with detailed site plans, layouts, and structural systems",
+                },
+                {
+                  number: "05",
+                  title: "Design Documentation",
+                  description: "Prepare construction drawings, specifications, schedules, and obtain permits",
+                },
+                {
+                  number: "06",
+                  title: "Tendering & Procurement",
+                  description: "Invite contractor bids, evaluate proposals, and award the contract",
+                },
+                {
+                  number: "07",
+                  title: "Construction Administration",
+                  description: "Oversee construction, monitor progress, and ensure design compliance",
+                },
+                {
+                  number: "08",
+                  title: "Project Completion",
+                  description: "Final inspections, certificates of occupancy, and project handover",
+                },
+              ].map((step) => (
+                <Card key={step.number} className="p-6 relative">
+                  <div className="text-5xl font-serif text-secondary/20 mb-3">{step.number}</div>
+                  <h4 className="text-lg font-serif mb-2">{step.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -253,6 +314,66 @@ export default function ServicesPage() {
                 View Projects <ArrowRight className="ml-2" size={16} />
               </Link>
             </Card>
+          </div>
+
+          {/* Interior Design Process */}
+          <div className="mt-20 pt-20 border-t border-border/50">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-serif mb-4">Our Interior Design Process</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                A refined 7-step journey from concept to completion
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {
+                  number: "01",
+                  title: "Initial Consultation",
+                  description: "Understand your vision, lifestyle, budget, and existing space conditions",
+                },
+                {
+                  number: "02",
+                  title: "Space Planning",
+                  description: "Create functional layouts optimizing flow, circulation, and ergonomics",
+                },
+                {
+                  number: "03",
+                  title: "Design Concept",
+                  description: "Develop mood boards, color schemes, materials, and furniture styles",
+                },
+                {
+                  number: "04",
+                  title: "Design Development",
+                  description: "Refine concepts with detailed drawings, 3D visualizations, and specifications",
+                },
+                {
+                  number: "05",
+                  title: "Material Selection",
+                  description: "Source and select finishes, furniture, fixtures, and accessories",
+                },
+                {
+                  number: "06",
+                  title: "Installation",
+                  description: "Oversee installation of finishes, furniture placement, and quality control",
+                },
+                {
+                  number: "07",
+                  title: "Project Completion",
+                  description: "Final walkthrough, punch lists, and delivery of care instructions",
+                },
+              ].map((step, index) => (
+                <Card key={step.number} className={`p-6 relative ${
+                  index >= 4 ? 'md:col-span-2 lg:col-span-1' : ''
+                } ${
+                  index === 6 ? 'lg:col-start-2' : ''
+                }`}>
+                  <div className="text-5xl font-serif text-secondary/20 mb-3">{step.number}</div>
+                  <h4 className="text-lg font-serif mb-2">{step.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>

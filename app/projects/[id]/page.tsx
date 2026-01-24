@@ -106,7 +106,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
       {/* Project Header */}
       <section className="py-12 px-6 lg:px-12">
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-[1600px] mx-auto scroll-animate">
           <div className="flex items-center gap-4 mb-6">
             <Button variant="outline" size="sm" asChild>
               <Link href="/projects">
@@ -208,12 +208,12 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
       {/* Final Completion Gallery */}
       <section className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-4xl font-serif mb-12">Final Completion</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-4xl font-serif mb-12 scroll-animate">Final Completion</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {project.finalPhotos.map((photo, index) => (
               <div
                 key={index}
-                className={`rounded-sm overflow-hidden ${index === 0 ? "md:col-span-2 md:row-span-2" : "aspect-[4/3]"}`}
+                className={`rounded-sm overflow-hidden scroll-animate ${index === 0 ? "md:col-span-2 md:row-span-2" : "aspect-[4/3]"}`}
               >
                 <Img
                   src={photo || "/placeholder.svg"}
@@ -228,7 +228,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
       {/* Before / After Comparison */}
       <section className="py-20 px-6 lg:px-12 bg-primary text-primary-foreground">
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-[1600px] mx-auto scroll-animate">
           <h2 className="text-4xl font-serif mb-12 text-center">Before & After</h2>
           <div className="max-w-4xl mx-auto">
             <ImageComparison beforeImage={project.beforeImage} afterImage={project.afterImage} />
@@ -239,8 +239,8 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
       {/* Materials & Features */}
       <section className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <Card className="p-10">
+          <div className="grid lg:grid-cols-2 gap-16 animate-fade-in-up-stagger">
+            <Card className="p-10 scroll-animate">
               <h3 className="text-2xl font-serif mb-6">Materials Used</h3>
               <ul className="space-y-3">
                 {project.materials.map((material, index) => (
@@ -269,7 +269,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
       {/* Client Testimonial */}
       <section className="py-20 px-6 lg:px-12 bg-secondary text-secondary-foreground">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center scroll-animate">
           <div className="flex justify-center gap-1 mb-6">
             {Array.from({ length: project.testimonial.rating }).map((_, i) => (
               <Star key={i} className="fill-secondary-foreground text-secondary-foreground" size={24} />
@@ -283,20 +283,20 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
       {/* Navigation to Other Projects */}
       <section className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-8 scroll-animate">
             <h2 className="text-3xl font-serif">More Projects</h2>
             <Button asChild variant="outline">
               <Link href="/projects">View All</Link>
             </Button>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {[
               { id: 2, title: "Downtown Office Tower", image: "/project-downtown-office.jpg" },
               { id: 4, title: "Luxury Penthouse Interior", image: "/project-penthouse-interior.jpg" },
               { id: 8, title: "Hillside Villa", image: "/project-hillside-villa.jpg" },
             ].map((relatedProject) => (
-              <Link key={relatedProject.id} href={`/projects/${relatedProject.id}`} className="group block">
+              <Link key={relatedProject.id} href={`/projects/${relatedProject.id}`} className="group block scroll-animate">
                 <div className="aspect-[4/3] rounded-sm overflow-hidden mb-4">
                   <Img
                     src={relatedProject.image || "/placeholder.svg"}

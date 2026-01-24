@@ -10,7 +10,7 @@ export default function ThankYouPage() {
       <Navigation />
 
       <section className="flex-1 flex items-center justify-center px-6 lg:px-12">
-        <div className="max-w-2xl text-center">
+        <div className="max-w-2xl text-center scroll-animate\">
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-secondary/10 mb-6">
             <CheckCircle2 className="text-secondary" size={40} />
           </div>

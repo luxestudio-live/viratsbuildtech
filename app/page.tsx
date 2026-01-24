@@ -49,15 +49,15 @@ export default function HomePage() {
       {/* Services Overview */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 scroll-animate">
             <h2 className="text-4xl md:text-5xl font-serif mb-4">Our Expertise</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               From concept to completion, we deliver comprehensive design solutions tailored to your vision
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger">
+            <Card className="p-8 scroll-animate">
               <div className="aspect-[4/3] rounded-sm overflow-hidden mb-6">
                 <Img
                   src="/indian-architectural-blueprints.jpg"
@@ -78,7 +78,7 @@ export default function HomePage() {
               </Link>
             </Card>
 
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            <Card className="p-8 scroll-animate">
               <div className="aspect-[4/3] rounded-sm overflow-hidden mb-6">
                 <Img
                   src="/indian-luxury-living-room.jpg"
@@ -98,7 +98,7 @@ export default function HomePage() {
               </Link>
             </Card>
 
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            <Card className="p-8 scroll-animate">
               <div className="aspect-[4/3] rounded-sm overflow-hidden mb-6">
                 <Img
                   src="/indian-construction-project.jpg"

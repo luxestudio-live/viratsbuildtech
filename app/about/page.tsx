@@ -14,7 +14,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">About Virats BuildTech</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               A legacy of architectural excellence and design innovation spanning over 15 years
@@ -26,7 +26,7 @@ export default function AboutPage() {
       {/* Company Overview */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center scroll-animate">
             <div className="aspect-[4/3] rounded-sm overflow-hidden">
               <Img
                 src="/indian-architecture-firm-office.jpg"
@@ -64,8 +64,8 @@ export default function AboutPage() {
       {/* Vision & Mission */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <Card className="p-10">
+          <div className="grid md:grid-cols-2 gap-12 animate-fade-in-up-stagger">
+            <Card className="p-10 scroll-animate">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
                 <Eye className="text-secondary" size={24} />
               </div>
@@ -78,7 +78,7 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="p-10">
+            <Card className="p-10 scroll-animate">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
                 <Target className="text-secondary" size={24} />
               </div>
@@ -97,15 +97,15 @@ export default function AboutPage() {
       {/* Design Philosophy */}
       <section className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Design Philosophy</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Our design philosophy is built on three fundamental principles that guide every project we undertake
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
+            <div className="text-center scroll-animate">
               <div className="aspect-square rounded-sm overflow-hidden mb-6">
                 <Img
                   src="/indian-minimalist-architecture.jpg"
@@ -120,7 +120,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center scroll-animate">
               <div className="aspect-square rounded-sm overflow-hidden mb-6">
                 <Img
                   src="/indian-sustainable-architecture.jpg"
@@ -135,7 +135,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center scroll-animate">
               <div className="aspect-square rounded-sm overflow-hidden mb-6">
                 <Img
                   src="/indian-timeless-interior-design.jpg"
@@ -156,14 +156,14 @@ export default function AboutPage() {
       {/* Our Process */}
       <section className="py-20 px-6 lg:px-12 bg-primary text-primary-foreground">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Our Process</h2>
             <p className="text-lg text-primary-foreground/90 leading-relaxed">
               A proven methodology that ensures exceptional results from concept to completion
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in-up-stagger">
             {[
               {
                 step: "01",
@@ -190,7 +190,7 @@ export default function AboutPage() {
                   "We oversee the build process, ensuring quality control, managing contractors, and maintaining constant communication until successful completion.",
               },
             ].map((phase) => (
-              <Card key={phase.step} className="p-8 bg-background text-foreground">
+              <Card key={phase.step} className="p-8 bg-background text-foreground scroll-animate">
                 <div className="text-5xl font-serif text-secondary/30 mb-4">{phase.step}</div>
                 <h3 className="text-xl font-serif mb-3">{phase.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{phase.description}</p>
@@ -203,12 +203,12 @@ export default function AboutPage() {
       {/* Certifications & Awards */}
       <section className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 scroll-animate">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Certifications & Awards</h2>
             <p className="text-lg text-muted-foreground">Recognition of our commitment to excellence in design</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 animate-fade-in-up-stagger">
             {[
               "AIA National Design Award 2024",
               "Best Commercial Design 2023",
@@ -219,7 +219,7 @@ export default function AboutPage() {
               "Best Residential Project 2021",
               "Innovation in Design 2020",
             ].map((award, index) => (
-              <Card key={index} className="p-6 text-center">
+              <Card key={index} className="p-6 text-center scroll-animate">
                 <Award className="mx-auto mb-3 text-secondary" size={32} />
                 <p className="text-sm leading-relaxed">{award}</p>
               </Card>
@@ -230,7 +230,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center scroll-animate">
           <h2 className="text-3xl md:text-4xl font-serif mb-6">Ready to work with us?</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             Let's discuss how we can bring your vision to life with our expertise and dedication

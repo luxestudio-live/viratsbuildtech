@@ -7,7 +7,7 @@ export default function CookiePolicyPage() {
       <Navigation />
 
       <section className="pt-32 pb-20 px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto scroll-animate\">
           <h1 className="text-5xl md:text-6xl font-serif mb-6">Cookie Policy</h1>
           <p className="text-sm text-muted-foreground mb-12">Last updated: January 2025</p>
 

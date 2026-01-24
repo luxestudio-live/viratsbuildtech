@@ -129,7 +129,7 @@ export default function ProjectsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Our Projects</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Explore our portfolio of architectural and interior design projects across residential, commercial, and
@@ -181,9 +181,9 @@ export default function ProjectsPage() {
       {/* Projects Grid */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {filteredProjects.map((project) => (
-              <Link key={project.id} href={`/projects/${project.id}`} className="group block">
+              <Link key={project.id} href={`/projects/${project.id}`} className="group block scroll-animate\">
                 <div className="aspect-[4/3] rounded-sm overflow-hidden mb-4">
                   <Img
                     src={project.image || "/placeholder.svg"}

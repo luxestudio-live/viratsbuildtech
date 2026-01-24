@@ -37,7 +37,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Get in Touch</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Ready to start your project? We'd love to hear from you. Fill out the form below or reach out directly.
@@ -49,9 +49,9 @@ export default function ContactPage() {
       {/* Contact Form & Info */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-16 animate-fade-in-up-stagger">
             {/* Contact Form */}
-            <Card className="p-8 lg:p-12">
+            <Card className="p-8 lg:p-12 scroll-animate\">
               <h2 className="text-2xl font-serif mb-6">Project Inquiry Form</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -160,9 +160,9 @@ export default function ContactPage() {
             </Card>
 
             {/* Contact Information */}
-            <div>
-              <div className="space-y-8 mb-12">
-                <Card className="p-6">
+            <div className="scroll-animate">
+              <div className="space-y-8 mb-12 animate-fade-in-up-stagger\">
+                <Card className="p-6 scroll-animate\">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
                       <Phone className="text-secondary" size={20} />
@@ -177,7 +177,7 @@ export default function ContactPage() {
                   </div>
                 </Card>
 
-                <Card className="p-6">
+                <Card className="p-6 scroll-animate\">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
                       <Mail className="text-secondary" size={20} />
@@ -192,9 +192,9 @@ export default function ContactPage() {
                   </div>
                 </Card>
 
-                <Card className="p-6">
+                <Card className="p-6 scroll-animate\">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0\">
                       <MapPin className="text-secondary" size={20} />
                     </div>
                     <div>

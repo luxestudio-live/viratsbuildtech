@@ -95,7 +95,7 @@ export default function FAQsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Frequently Asked Questions</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Find answers to common questions about our services, process, and how we can help with your project
@@ -108,7 +108,7 @@ export default function FAQsPage() {
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
           {faqCategories.map((category, index) => (
-            <div key={index} className="mb-12">
+            <div key={index} className="mb-12 scroll-animate\">
               <h2 className="text-2xl font-serif mb-6">{category.category}</h2>
               <Accordion type="single" collapsible className="space-y-4">
                 {category.questions.map((faq, faqIndex) => (
@@ -129,8 +129,8 @@ export default function FAQsPage() {
 
       {/* CTA */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6">Still have questions?</h2>
+        <div className="max-w-4xl mx-auto text-center scroll-animate\">
+          <h2 className="text-3xl md:text-4xl font-serif mb-6\">Still have questions?</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             We're here to help. Contact us directly or schedule a consultation to discuss your specific needs.
           </p>

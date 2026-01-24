@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { ScrollAnimationObserver } from "@/components/scroll-animation-observer"
 import "./globals.css"
 import { ScrollToTop } from "@/components/scroll-to-top"
 
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
+        <ScrollAnimationObserver />
         <ScrollToTop />
         {children}
         <Analytics />

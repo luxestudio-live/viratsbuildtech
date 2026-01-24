@@ -95,7 +95,7 @@ export default function TeamPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Our Team</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Meet the talented professionals behind every project—architects, designers, and specialists dedicated to
@@ -108,10 +108,10 @@ export default function TeamPage() {
       {/* Leadership */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Leadership</h2>
-          <div className="grid md:grid-cols-2 gap-12">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">Leadership</h2>
+          <div className="grid md:grid-cols-2 gap-12 animate-fade-in-up-stagger">
             {teamMembers.leadership.map((member) => (
-              <Card key={member.name} className="p-8">
+              <Card key={member.name} className="p-8 scroll-animate\">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full md:w-48 aspect-square rounded-sm overflow-hidden shrink-0">
                     <Img
@@ -151,10 +151,10 @@ export default function TeamPage() {
       {/* Architecture Team */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Architecture Team</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">Architecture Team</h2>
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {teamMembers.architects.map((member) => (
-              <Card key={member.name} className="p-6 bg-background">
+              <Card key={member.name} className="p-6 bg-background scroll-animate\">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
                   <Img
                     src={member.image || "/placeholder.svg"}
@@ -174,10 +174,10 @@ export default function TeamPage() {
       {/* Interior Design Team */}
       <section className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Interior Design Team</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">Interior Design Team</h2>
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {teamMembers.interior.map((member) => (
-              <Card key={member.name} className="p-6">
+              <Card key={member.name} className="p-6 scroll-animate\">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
                   <Img
                     src={member.image || "/placeholder.svg"}
@@ -197,10 +197,10 @@ export default function TeamPage() {
       {/* Project & Support Team */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Project & Support Team</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">Project & Support Team</h2>
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {teamMembers.support.map((member) => (
-              <Card key={member.name} className="p-6 bg-background">
+              <Card key={member.name} className="p-6 bg-background scroll-animate\">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
                   <Img
                     src={member.image || "/placeholder.svg"}

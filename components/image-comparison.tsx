@@ -49,7 +49,7 @@ export function ImageComparison({ beforeImage, afterImage }: ImageComparisonProp
       onClick={handleClick}
     >
       {/* After Image (Full) */}
-      <img src={assetPath(afterImage || "/placeholder.svg")} alt="After" className="absolute inset-0 w-full h-full object-cover" />
+      <img src={assetPath(afterImage || "/placeholder.svg")} alt="After" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
 
       {/* Before Image (Clipped) */}
       <div
@@ -59,6 +59,8 @@ export function ImageComparison({ beforeImage, afterImage }: ImageComparisonProp
         <img
           src={assetPath(beforeImage || "/placeholder.svg")}
           alt="Before"
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>

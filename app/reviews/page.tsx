@@ -116,7 +116,7 @@ export default function ReviewsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Client Reviews</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Hear directly from our clients about their experiences working with Virats BuildTech
@@ -128,7 +128,7 @@ export default function ReviewsPage() {
       {/* Overall Rating */}
       <section className="pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <Card className="p-12 text-center bg-secondary text-secondary-foreground">
+          <Card className="p-12 text-center bg-secondary text-secondary-foreground scroll-animate">
             <div className="max-w-2xl mx-auto">
               <div className="text-6xl font-serif mb-4">4.9</div>
               <div className="flex justify-center gap-1 mb-4">
@@ -145,10 +145,10 @@ export default function ReviewsPage() {
       {/* Written Testimonials */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">What Our Clients Say</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">What Our Clients Say</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {reviews.map((review, index) => (
-              <Card key={index} className="p-8">
+              <Card key={index} className="p-8 scroll-animate\">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: review.rating }).map((_, i) => (
                     <Star key={i} className="fill-secondary text-secondary" size={16} />
@@ -180,12 +180,12 @@ export default function ReviewsPage() {
       {/* Video Testimonials */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Video Testimonials</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">Video Testimonials</h2>
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger\">
             {videoTestimonials.map((video, index) => (
               <button
                 key={index}
-                className="group relative aspect-video rounded-sm overflow-hidden cursor-pointer"
+                className="group relative aspect-video rounded-sm overflow-hidden cursor-pointer scroll-animate"
                 aria-label={`Play video testimonial from ${video.name}`}
               >
                 <Img

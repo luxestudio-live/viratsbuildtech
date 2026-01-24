@@ -78,7 +78,7 @@ export default function CareersPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Join Our Team</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Be part of a talented team creating exceptional architectural and design solutions that shape the built
@@ -91,8 +91,8 @@ export default function CareersPage() {
       {/* Why Work Here */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid lg:grid-cols-2 gap-16 items-center animate-fade-in-up-stagger\">
+            <div className="scroll-animate\">
               <h2 className="text-3xl md:text-4xl font-serif mb-6">Why Virats BuildTech?</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 At Virats BuildTech, we believe that great design comes from great people. We foster a culture of creativity,
@@ -111,7 +111,7 @@ export default function CareersPage() {
                 </div>
               </div>
             </div>
-            <div className="aspect-[4/3] rounded-sm overflow-hidden">
+            <div className="aspect-[4/3] rounded-sm overflow-hidden scroll-animate\">
               <img
                 src="/indian-careers-team-photo.jpg"
                 alt="Team collaboration"
@@ -125,10 +125,10 @@ export default function CareersPage() {
       {/* Open Positions */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif mb-12">Open Positions</h2>
-          <div className="space-y-6">
+          <h2 className="text-3xl md:text-4xl font-serif mb-12 scroll-animate\">Open Positions</h2>
+          <div className="space-y-6 animate-fade-in-up-stagger\">
             {openPositions.map((position) => (
-              <Card key={position.id} className="p-8 hover:shadow-lg transition-shadow">
+              <Card key={position.id} className="p-8 hover:shadow-lg transition-shadow scroll-animate\">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -163,7 +163,7 @@ export default function CareersPage() {
 
       {/* Don't See Your Role */}
       <section className="py-20 px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center scroll-animate\">
           <h2 className="text-3xl md:text-4xl font-serif mb-6">Don't see the right role?</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             We're always interested in meeting talented professionals. Send us your portfolio and resume, and we'll keep

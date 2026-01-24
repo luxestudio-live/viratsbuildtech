@@ -105,7 +105,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Insights & Resources</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Expert perspectives on architecture, interior design, sustainability, and industry trends
@@ -117,7 +117,7 @@ export default function BlogPage() {
       {/* Featured Post */}
       <section className="pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <Link href={`/blog/${blogPosts[0].slug}`} className="group block">
+          <Link href={`/blog/${blogPosts[0].slug}`} className="group block scroll-animate">
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="aspect-[4/3] lg:aspect-auto overflow-hidden">
@@ -158,11 +158,11 @@ export default function BlogPage() {
       {/* Blog Grid */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Latest Articles</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate">Latest Articles</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger\">
             {blogPosts.slice(1).map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
-                <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col scroll-animate">
                   <div className="aspect-[16/10] overflow-hidden">
                     <img
                       src={post.image || "/placeholder.svg"}
@@ -199,15 +199,15 @@ export default function BlogPage() {
       {/* Categories */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12 text-center">Browse by Category</h2>
-          <div className="grid md:grid-cols-4 gap-6">
+          <h2 className="text-3xl font-serif mb-12 text-center scroll-animate">Browse by Category</h2>
+          <div className="grid md:grid-cols-4 gap-6 animate-fade-in-up-stagger\">
             {[
               { name: "Architecture Trends", count: 24 },
               { name: "Interior Design Tips", count: 31 },
               { name: "Case Studies", count: 18 },
               { name: "Sustainability", count: 15 },
             ].map((category) => (
-              <Card key={category.name} className="p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
+              <Card key={category.name} className="p-6 text-center hover:shadow-lg transition-shadow cursor-pointer scroll-animate">
                 <h3 className="font-serif text-lg mb-2">{category.name}</h3>
                 <p className="text-sm text-muted-foreground">{category.count} articles</p>
               </Card>

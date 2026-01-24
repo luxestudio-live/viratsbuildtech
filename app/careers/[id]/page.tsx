@@ -21,7 +21,7 @@ export default function JobDetailPage({ params }: { params: { id: string } }) {
 
       {/* Header */}
       <section className="pt-32 pb-12 px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto scroll-animate\">
           <Button variant="outline" size="sm" asChild className="mb-6 bg-transparent">
             <Link href="/careers">
               <ArrowLeft className="mr-2" size={16} />
@@ -56,7 +56,7 @@ export default function JobDetailPage({ params }: { params: { id: string } }) {
       {/* Job Details */}
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
-          <Card className="p-10 space-y-8">
+          <Card className="p-10 space-y-8 scroll-animate\">
             <div>
               <h2 className="text-2xl font-serif mb-4">About the Role</h2>
               <p className="text-muted-foreground leading-relaxed">

@@ -14,7 +14,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl scroll-animate">
             <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">Our Services</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Comprehensive design solutions tailored to your unique needs—from architectural planning to interior
@@ -27,7 +27,7 @@ export default function ServicesPage() {
       {/* Civil Architecture */}
       <section id="architecture" className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20 scroll-animate">
             <div>
               <h2 className="text-4xl md:text-5xl font-serif mb-6">Civil Architecture</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -94,8 +94,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Architecture Service Cards */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8">
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
+            <Card className="p-8 scroll-animate">
               <h3 className="text-xl font-serif mb-3">Residential Architecture</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Custom homes, villas, apartments, and multi-family residences designed to reflect your lifestyle and
@@ -109,7 +109,7 @@ export default function ServicesPage() {
               </Link>
             </Card>
 
-            <Card className="p-8">
+            <Card className="p-8 scroll-animate">
               <h3 className="text-xl font-serif mb-3">Commercial Architecture</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Office buildings, retail spaces, hotels, and mixed-use developments that balance functionality with
@@ -123,7 +123,7 @@ export default function ServicesPage() {
               </Link>
             </Card>
 
-            <Card className="p-8">
+            <Card className="p-8 scroll-animate">
               <h3 className="text-xl font-serif mb-3">Industrial Architecture</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Warehouses, manufacturing facilities, and industrial complexes optimized for operational efficiency and
@@ -140,14 +140,14 @@ export default function ServicesPage() {
 
           {/* Civil Architecture Process */}
           <div className="mt-20 pt-20 border-t">
-            <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate">
               <h3 className="text-3xl md:text-4xl font-serif mb-4">Our Architecture Process</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 A systematic 8-step approach to bringing your architectural vision to life
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in-up-stagger">
               {[
                 {
                   number: "01",
@@ -204,7 +204,7 @@ export default function ServicesPage() {
       {/* Interior Design */}
       <section id="interior" className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20 scroll-animate">
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
@@ -273,8 +273,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Interior Design Service Cards */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 bg-background">
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
+            <Card className="p-8 bg-background scroll-animate">
               <h3 className="text-xl font-serif mb-3">Residential Interiors</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Living rooms, bedrooms, kitchens, and complete home styling that creates warm, inviting spaces for
@@ -288,7 +288,7 @@ export default function ServicesPage() {
               </Link>
             </Card>
 
-            <Card className="p-8 bg-background">
+            <Card className="p-8 bg-background scroll-animate">
               <h3 className="text-xl font-serif mb-3">Office Interiors</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Productive workspaces that inspire collaboration and creativity while reflecting your brand identity and
@@ -302,7 +302,7 @@ export default function ServicesPage() {
               </Link>
             </Card>
 
-            <Card className="p-8 bg-background">
+            <Card className="p-8 bg-background scroll-animate">
               <h3 className="text-xl font-serif mb-3">Hospitality Interiors</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Restaurants, hotels, and hospitality venues designed to create memorable guest experiences and
@@ -319,14 +319,14 @@ export default function ServicesPage() {
 
           {/* Interior Design Process */}
           <div className="mt-20 pt-20 border-t border-border/50">
-            <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate">
               <h3 className="text-3xl md:text-4xl font-serif mb-4">Our Interior Design Process</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 A refined 7-step journey from concept to completion
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in-up-stagger">
               {/* First row - 4 steps */}
               {[
                 {
@@ -376,7 +376,7 @@ export default function ServicesPage() {
                   description: "Final walkthrough, punch lists, and delivery of care instructions",
                 },
               ].map((step) => (
-                <Card key={step.number} className="p-6 relative">
+                <Card key={step.number} className="p-6 relative scroll-animate">
                   <div className="text-5xl font-serif text-secondary/20 mb-3">{step.number}</div>
                   <h4 className="text-lg font-serif mb-2">{step.title}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
@@ -390,8 +390,8 @@ export default function ServicesPage() {
       {/* Turnkey Solutions */}
       <section id="turnkey" className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Turnkey Solutions</h2>
+          <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate\">
+            <h2 className=\"text-4xl md:text-5xl font-serif mb-6\">Turnkey Solutions</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Complete design-build services that take your project from initial concept through final execution with a
               single point of responsibility
@@ -472,15 +472,15 @@ export default function ServicesPage() {
       {/* Consultation Services */}
       <section id="consultation" className="py-20 px-6 lg:px-12 bg-secondary text-secondary-foreground">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center scroll-animate\">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Consultation Services</h2>
             <p className="text-lg text-secondary-foreground/90 leading-relaxed mb-8">
               Expert guidance for your project at any stage—from site selection and feasibility studies to design review
               and construction advisory
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="p-6 bg-background text-foreground text-left">
+            <div className="grid md:grid-cols-3 gap-6 mb-12 animate-fade-in-up-stagger\">
+              <Card className="p-6 bg-background text-foreground text-left scroll-animate\">
                 <h3 className="font-serif text-lg mb-2">Initial Consultation</h3>
                 <p className="text-sm text-muted-foreground">
                   One-on-one session to discuss your vision, budget, and project feasibility
@@ -516,7 +516,7 @@ export default function ServicesPage() {
 
       {/* CTA */}
       <section className="py-20 px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center scroll-animate\">
           <h2 className="text-3xl md:text-4xl font-serif mb-6">Let's bring your vision to life</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             Whether you need architecture, interior design, or complete turnkey solutions, we're here to help

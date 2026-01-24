@@ -34,7 +34,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       {/* Article Header */}
       <section className="py-12 px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto scroll-animate\">
           <div className="flex items-center gap-4 mb-6">
             <Button variant="outline" size="sm" asChild>
               <Link href="/blog">
@@ -70,7 +70,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Article Content */}
-      <article className="pb-20 px-6 lg:px-12">
+      <article className="pb-20 px-6 lg:px-12 scroll-animate\">
         <div className="max-w-3xl mx-auto prose prose-lg">
           <p className="text-lg leading-relaxed text-muted-foreground">
             As we move further into 2025, sustainable architecture has evolved from a niche concern to an industry
@@ -119,8 +119,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       {/* Related Posts */}
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="text-3xl font-serif mb-12">Related Articles</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-serif mb-12 scroll-animate\">Related Articles</h2>
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger\">
             {[
               {
                 title: "Biophilic Design Principles",
@@ -138,7 +138,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 slug: "smart-home-integration",
               },
             ].map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group block scroll-animate\">
                 <div className="aspect-[16/10] rounded-sm overflow-hidden mb-4">
                   <img
                     src={post.image || "/placeholder.svg"}

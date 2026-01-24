@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react"
@@ -27,7 +28,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       {/* Hero Image */}
       <section className="pt-20">
         <div className="aspect-[21/9] w-full overflow-hidden">
-          <img src="/blog-post-hero.jpg" alt="Blog post hero" className="object-cover w-full h-full" />
+          <Img src="/blog-post-hero.jpg" alt="Blog post hero" className="object-cover w-full h-full" />
         </div>
       </section>
 

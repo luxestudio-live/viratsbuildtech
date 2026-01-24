@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Star, Play } from "lucide-react"
@@ -156,7 +157,7 @@ export default function ReviewsPage() {
                 <p className="text-muted-foreground leading-relaxed mb-6">"{review.content}"</p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full overflow-hidden bg-muted">
-                    <img
+                    <Img
                       src={review.image || "/placeholder.svg"}
                       alt={review.name}
                       className="object-cover w-full h-full"
@@ -187,7 +188,7 @@ export default function ReviewsPage() {
                 className="group relative aspect-video rounded-sm overflow-hidden cursor-pointer"
                 aria-label={`Play video testimonial from ${video.name}`}
               >
-                <img
+                <Img
                   src={video.thumbnail || "/placeholder.svg"}
                   alt={video.name}
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"

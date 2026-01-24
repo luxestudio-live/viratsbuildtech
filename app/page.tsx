@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ArrowRight, CheckCircle2, Users, Award, Clock, Star } from "lucide-react"
@@ -35,7 +36,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
-              <img
+              <Img
                 src="/indian-modern-architecture-building.jpg"
                 alt="Modern architecture"
                 className="object-cover w-full h-full"
@@ -58,7 +59,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <div className="aspect-[4/3] rounded-sm overflow-hidden mb-6">
-                <img
+                <Img
                   src="/indian-architectural-blueprints.jpg"
                   alt="Civil Architecture"
                   className="object-cover w-full h-full"
@@ -79,7 +80,7 @@ export default function HomePage() {
 
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <div className="aspect-[4/3] rounded-sm overflow-hidden mb-6">
-                <img
+                <Img
                   src="/indian-luxury-living-room.jpg"
                   alt="Interior Design"
                   className="object-cover w-full h-full"
@@ -99,7 +100,7 @@ export default function HomePage() {
 
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <div className="aspect-[4/3] rounded-sm overflow-hidden mb-6">
-                <img
+                <Img
                   src="/indian-construction-project.jpg"
                   alt="Turnkey Solutions"
                   className="object-cover w-full h-full"
@@ -136,7 +137,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Link href="/projects/1" className="group block">
               <div className="aspect-[3/2] rounded-sm overflow-hidden mb-4">
-                <img
+                <Img
                   src="/indian-modern-residential-villa.jpg"
                   alt="Riverside Residence"
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
@@ -153,7 +154,7 @@ export default function HomePage() {
 
             <Link href="/projects/2" className="group block">
               <div className="aspect-[3/2] rounded-sm overflow-hidden mb-4">
-                <img
+                <Img
                   src="/indian-commercial-office-building.jpg"
                   alt="Downtown Office Tower"
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
@@ -170,7 +171,7 @@ export default function HomePage() {
 
             <Link href="/projects/3" className="group block">
               <div className="aspect-[3/2] rounded-sm overflow-hidden mb-4">
-                <img
+                <Img
                   src="/indian-luxury-penthouse-interior.jpg"
                   alt="Luxury Penthouse Interior"
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
@@ -187,7 +188,7 @@ export default function HomePage() {
 
             <Link href="/projects/4" className="group block">
               <div className="aspect-[3/2] rounded-sm overflow-hidden mb-4">
-                <img
+                <Img
                   src="/indian-restaurant-interior.jpg"
                   alt="Urban Bistro Interior"
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"

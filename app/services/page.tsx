@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { CheckCircle2, ArrowRight } from "lucide-react"
@@ -59,14 +60,14 @@ export default function ServicesPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="aspect-[3/4] rounded-sm overflow-hidden">
-                  <img
+                  <Img
                     src="/indian-residential-architecture.jpg"
                     alt="Residential"
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="aspect-square rounded-sm overflow-hidden">
-                  <img
+                  <Img
                     src="/indian-commercial-architecture.jpg"
                     alt="Commercial"
                     className="object-cover w-full h-full"
@@ -75,14 +76,14 @@ export default function ServicesPage() {
               </div>
               <div className="space-y-4 mt-12">
                 <div className="aspect-square rounded-sm overflow-hidden">
-                  <img
+                  <Img
                     src="/indian-industrial-architecture.jpg"
                     alt="Industrial"
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="aspect-[3/4] rounded-sm overflow-hidden">
-                  <img
+                  <Img
                     src="/indian-sustainable-building.jpg"
                     alt="Sustainable"
                     className="object-cover w-full h-full"
@@ -208,14 +209,14 @@ export default function ServicesPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="aspect-[3/4] rounded-sm overflow-hidden">
-                    <img
+                    <Img
                       src="/indian-residential-interior.jpg"
                       alt="Residential Interior"
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="aspect-square rounded-sm overflow-hidden">
-                    <img
+                    <Img
                       src="/indian-office-interior.jpg"
                       alt="Office Interior"
                       className="object-cover w-full h-full"
@@ -224,14 +225,14 @@ export default function ServicesPage() {
                 </div>
                 <div className="space-y-4 mt-12">
                   <div className="aspect-square rounded-sm overflow-hidden">
-                    <img
+                    <Img
                       src="/indian-hospitality-interior.jpg"
                       alt="Hospitality Interior"
                       className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="aspect-[3/4] rounded-sm overflow-hidden">
-                    <img
+                    <Img
                       src="/indian-retail-interior.jpg"
                       alt="Retail Interior"
                       className="object-cover w-full h-full"
@@ -399,7 +400,7 @@ export default function ServicesPage() {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-[4/3] rounded-sm overflow-hidden">
-              <img
+              <Img
                 src="/indian-turnkey-construction.jpg"
                 alt="Turnkey Solutions"
                 className="object-cover w-full h-full"

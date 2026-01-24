@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
+import { assetPath } from "@/lib/asset-path"
 
 interface ImageComparisonProps {
   beforeImage: string
@@ -48,7 +49,7 @@ export function ImageComparison({ beforeImage, afterImage }: ImageComparisonProp
       onClick={handleClick}
     >
       {/* After Image (Full) */}
-      <img src={afterImage || "/placeholder.svg"} alt="After" className="absolute inset-0 w-full h-full object-cover" />
+      <img src={assetPath(afterImage || "/placeholder.svg")} alt="After" className="absolute inset-0 w-full h-full object-cover" />
 
       {/* Before Image (Clipped) */}
       <div
@@ -56,7 +57,7 @@ export function ImageComparison({ beforeImage, afterImage }: ImageComparisonProp
         style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
       >
         <img
-          src={beforeImage || "/placeholder.svg"}
+          src={assetPath(beforeImage || "/placeholder.svg")}
           alt="Before"
           className="absolute inset-0 w-full h-full object-cover"
         />

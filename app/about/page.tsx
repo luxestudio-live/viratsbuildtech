@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Target, Eye, Award } from "lucide-react"
@@ -27,7 +28,7 @@ export default function AboutPage() {
         <div className="max-w-[1600px] mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-[4/3] rounded-sm overflow-hidden">
-              <img
+              <Img
                 src="/indian-architecture-firm-office.jpg"
                 alt="Virats BuildTech Studio"
                 className="object-cover w-full h-full"
@@ -106,7 +107,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="aspect-square rounded-sm overflow-hidden mb-6">
-                <img
+                <Img
                   src="/indian-minimalist-architecture.jpg"
                   alt="Functionality"
                   className="object-cover w-full h-full"
@@ -121,7 +122,7 @@ export default function AboutPage() {
 
             <div className="text-center">
               <div className="aspect-square rounded-sm overflow-hidden mb-6">
-                <img
+                <Img
                   src="/indian-sustainable-architecture.jpg"
                   alt="Sustainability"
                   className="object-cover w-full h-full"
@@ -136,7 +137,7 @@ export default function AboutPage() {
 
             <div className="text-center">
               <div className="aspect-square rounded-sm overflow-hidden mb-6">
-                <img
+                <Img
                   src="/indian-timeless-interior-design.jpg"
                   alt="Timelessness"
                   className="object-cover w-full h-full"

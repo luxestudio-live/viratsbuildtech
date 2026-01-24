@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -95,7 +96,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
       {/* Hero Image */}
       <section className="pt-20">
         <div className="aspect-[21/9] w-full overflow-hidden">
-          <img
+          <Img
             src={project.heroImage || "/placeholder.svg"}
             alt={project.title}
             className="object-cover w-full h-full"
@@ -175,7 +176,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
           <div className="grid md:grid-cols-3 gap-8">
             {project.blueprints.map((blueprint, index) => (
               <div key={index} className="aspect-[3/4] rounded-sm overflow-hidden border border-border">
-                <img
+                <Img
                   src={blueprint || "/placeholder.svg"}
                   alt={`Floor plan ${index + 1}`}
                   className="object-cover w-full h-full"
@@ -193,7 +194,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
           <div className="grid md:grid-cols-2 gap-8">
             {project.constructionPhotos.map((photo, index) => (
               <div key={index} className="aspect-[4/3] rounded-sm overflow-hidden">
-                <img
+                <Img
                   src={photo || "/placeholder.svg"}
                   alt={`Construction ${index + 1}`}
                   className="object-cover w-full h-full"
@@ -214,7 +215,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
                 key={index}
                 className={`rounded-sm overflow-hidden ${index === 0 ? "md:col-span-2 md:row-span-2" : "aspect-[4/3]"}`}
               >
-                <img
+                <Img
                   src={photo || "/placeholder.svg"}
                   alt={`Final ${index + 1}`}
                   className="object-cover w-full h-full"
@@ -297,7 +298,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
             ].map((relatedProject) => (
               <Link key={relatedProject.id} href={`/projects/${relatedProject.id}`} className="group block">
                 <div className="aspect-[4/3] rounded-sm overflow-hidden mb-4">
-                  <img
+                  <Img
                     src={relatedProject.image || "/placeholder.svg"}
                     alt={relatedProject.title}
                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"

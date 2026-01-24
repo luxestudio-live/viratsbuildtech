@@ -14,7 +14,7 @@ const _playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: "Virats BuildTech",
   description: "Premium architectural design and interior solutions for residential and commercial spaces",
-  generator: "v0.app",
+  generator: "luxestudio",
   icons: {
     icon: [
       {
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
         url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: dark)",
       },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      // {
+      //   url: "/icon.svg",
+      //   type: "image/svg+xml",
+      // },
     ],
     apple: "/apple-icon.png",
   },

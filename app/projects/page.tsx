@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -184,7 +185,7 @@ export default function ProjectsPage() {
             {filteredProjects.map((project) => (
               <Link key={project.id} href={`/projects/${project.id}`} className="group block">
                 <div className="aspect-[4/3] rounded-sm overflow-hidden mb-4">
-                  <img
+                  <Img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"

@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Img } from "@/components/img"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Linkedin, Mail } from "lucide-react"
@@ -113,7 +114,7 @@ export default function TeamPage() {
               <Card key={member.name} className="p-8">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full md:w-48 aspect-square rounded-sm overflow-hidden shrink-0">
-                    <img
+                    <Img
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
                       className="object-cover w-full h-full"
@@ -155,7 +156,7 @@ export default function TeamPage() {
             {teamMembers.architects.map((member) => (
               <Card key={member.name} className="p-6 bg-background">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
-                  <img
+                  <Img
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     className="object-cover w-full h-full"
@@ -178,7 +179,7 @@ export default function TeamPage() {
             {teamMembers.interior.map((member) => (
               <Card key={member.name} className="p-6">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
-                  <img
+                  <Img
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     className="object-cover w-full h-full"
@@ -201,7 +202,7 @@ export default function TeamPage() {
             {teamMembers.support.map((member) => (
               <Card key={member.name} className="p-6 bg-background">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
-                  <img
+                  <Img
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     className="object-cover w-full h-full"

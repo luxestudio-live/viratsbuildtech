@@ -21,13 +21,21 @@ export function ScrollAnimationObserver() {
 
       // Observe all elements with scroll-animate class
       const animatedElements = document.querySelectorAll('.scroll-animate')
-      animatedElements.forEach((el) => observer.observe(el))
+      animatedElements.forEach((el) => {
+        observer.observe(el)
+        
+        // Check if element is already in viewport on page load
+        const rect = el.getBoundingClientRect()
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('in-view')
+        }
+      })
 
       return () => {
         animatedElements.forEach((el) => observer.unobserve(el))
         observer.disconnect()
       }
-    }, 100)
+    }, 50)
 
     return () => clearTimeout(timer)
   }, [])

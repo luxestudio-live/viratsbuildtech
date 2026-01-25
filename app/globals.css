@@ -80,11 +80,13 @@
 .scroll-animate {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.6s cubic-bezier(0.23, 1, 0.320, 1), transform 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  will-change: opacity, transform;
 }
 
+/* Only hide initially if prefers-reduced-motion is not set */
 @media (prefers-reduced-motion: no-preference) {
-  .scroll-animate {
+  .scroll-animate:not(.in-view) {
     opacity: 0;
     transform: translateY(30px);
   }

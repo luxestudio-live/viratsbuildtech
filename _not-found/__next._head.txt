@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[89836,["/viratsbuildtech/_next/static/chunks/74208f0ff6a694a4.js","/viratsbuildtech/_next/static/chunks/796e7f5bb07ad38d.js"],"ViewportBoundary"]
+4:I[89836,["/viratsbuildtech/_next/static/chunks/74208f0ff6a694a4.js","/viratsbuildtech/_next/static/chunks/796e7f5bb07ad38d.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"Q7Ub-mel_Z0pjlCcbtsDk","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Virats BuildTech"}],["$","meta","1",{"name":"description","content":"Premium architectural design and interior solutions for residential and commercial spaces"}],["$","meta","2",{"name":"generator","content":"luxestudio"}]]

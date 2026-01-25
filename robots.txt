@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luxestudio-live.github.io/viratsbuildtech/sitemap.xml

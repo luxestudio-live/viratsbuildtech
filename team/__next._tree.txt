@@ -1,0 +1,5 @@
+:HL["/viratsbuildtech/_next/static/chunks/edc5df46ba374fde.css","style"]
+:HL["/viratsbuildtech/_next/static/chunks/f7a0b5ceaf24f700.css","style"]
+:HL["/viratsbuildtech/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/viratsbuildtech/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"buildId":"Q7Ub-mel_Z0pjlCcbtsDk","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"team","paramType":null,"paramKey":"team","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

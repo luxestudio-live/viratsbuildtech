@@ -390,8 +390,8 @@ export default function ServicesPage() {
       {/* Turnkey Solutions */}
       <section id="turnkey" className="py-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate\">
-            <h2 className=\"text-4xl md:text-5xl font-serif mb-6\">Turnkey Solutions</h2>
+          <div className="max-w-3xl mx-auto text-center mb-16 scroll-animate">
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">Turnkey Solutions</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Complete design-build services that take your project from initial concept through final execution with a
               single point of responsibility

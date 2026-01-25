@@ -159,7 +159,7 @@ export default function BlogPage() {
       <section className="pb-20 px-6 lg:px-12">
         <div className="max-w-[1600px] mx-auto">
           <h2 className="text-3xl font-serif mb-12 scroll-animate">Latest Articles</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger\">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {blogPosts.slice(1).map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col scroll-animate">

@@ -111,7 +111,7 @@ export default function TeamPage() {
           <h2 className="text-3xl font-serif mb-12 scroll-animate">Leadership</h2>
           <div className="grid md:grid-cols-2 gap-12 animate-fade-in-up-stagger">
             {teamMembers.leadership.map((member) => (
-              <Card key={member.name} className="p-8 scroll-animate\">
+              <Card key={member.name} className="p-8 scroll-animate">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full md:w-48 aspect-square rounded-sm overflow-hidden shrink-0">
                     <Img
@@ -154,7 +154,7 @@ export default function TeamPage() {
           <h2 className="text-3xl font-serif mb-12 scroll-animate">Architecture Team</h2>
           <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {teamMembers.architects.map((member) => (
-              <Card key={member.name} className="p-6 bg-background scroll-animate\">
+              <Card key={member.name} className="p-6 bg-background scroll-animate">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
                   <Img
                     src={member.image || "/placeholder.svg"}
@@ -177,7 +177,7 @@ export default function TeamPage() {
           <h2 className="text-3xl font-serif mb-12 scroll-animate">Interior Design Team</h2>
           <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {teamMembers.interior.map((member) => (
-              <Card key={member.name} className="p-6 scroll-animate\">
+              <Card key={member.name} className="p-6 scroll-animate">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
                   <Img
                     src={member.image || "/placeholder.svg"}
@@ -200,7 +200,7 @@ export default function TeamPage() {
           <h2 className="text-3xl font-serif mb-12 scroll-animate">Project & Support Team</h2>
           <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {teamMembers.support.map((member) => (
-              <Card key={member.name} className="p-6 bg-background scroll-animate\">
+              <Card key={member.name} className="p-6 bg-background scroll-animate">
                 <div className="aspect-square rounded-sm overflow-hidden mb-4">
                   <Img
                     src={member.image || "/placeholder.svg"}

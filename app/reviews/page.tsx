@@ -148,7 +148,7 @@ export default function ReviewsPage() {
           <h2 className="text-3xl font-serif mb-12 scroll-animate">What Our Clients Say</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {reviews.map((review, index) => (
-              <Card key={index} className="p-8 scroll-animate\">
+              <Card key={index} className="p-8 scroll-animate">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: review.rating }).map((_, i) => (
                     <Star key={i} className="fill-secondary text-secondary" size={16} />
@@ -181,7 +181,7 @@ export default function ReviewsPage() {
       <section className="py-20 px-6 lg:px-12 bg-muted/30">
         <div className="max-w-[1600px] mx-auto">
           <h2 className="text-3xl font-serif mb-12 scroll-animate">Video Testimonials</h2>
-          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger\">
+          <div className="grid md:grid-cols-3 gap-8 animate-fade-in-up-stagger">
             {videoTestimonials.map((video, index) => (
               <button
                 key={index}
